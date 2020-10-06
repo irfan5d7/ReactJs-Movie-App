@@ -24,13 +24,14 @@ const getMovies = (API) =>{
   const handleOnSubmit = (e) =>{
     e.preventDefault();
     if(searchTerm){
-      getMovies(SEARCH_API+searchTerm);
+      getMovies(SEARCH_API+searchTerm); 
       setSearchTerm('');
     }
   } 
   const handleOnChange = (e) => {
     setSearchTerm(e.target.value);
   }
+  
   return (
     <div>
     <header>
